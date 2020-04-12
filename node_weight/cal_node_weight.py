@@ -1,14 +1,13 @@
 
-
 from os.path import join
 import pandas as pd
 from py_deseq import py_DESeq2
-#from diffexp.py_deseq import py_DESeq2
 
 
 if __name__ == '__main__':
     
-    dir_data = '../../module3_data'
+    #dir_data = '../../module3_data'
+    dir_data = '../results'
  
     design_matrix = pd.read_csv(join(dir_data, 'design_matrix.csv'))   
     count_matrix = pd.read_csv(join(dir_data, 'count_matrix.csv'))
